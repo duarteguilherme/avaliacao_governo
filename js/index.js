@@ -6,8 +6,8 @@ myChart.setBounds(60, 30, 800, 600); // Seta Limites
 var x = myChart.addTimeAxis("x", "data", "%Y-%m-%d", "%m-%Y"); // 
 var y1 = myChart.addPctAxis("y", "valor");
 var y2 = myChart.addPctAxis("y", "serie");
-y1.overrideMax = "1";
-y2.overrideMax = "1";
+y1.overrideMax = ".85"; // Coloca o limite do eixo y para 85%
+y2.overrideMax = ".85";
 y2.hidden = true;
 ibope = dimple.filterData(data, "instituto", "ibope");
 datafolha = dimple.filterData(data, "instituto", "datafolha");
